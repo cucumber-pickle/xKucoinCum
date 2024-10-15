@@ -1,0 +1,9 @@
+{
+    "use_proxy": true,
+    "min_click": 50,
+    "max_click": 70,
+    "min_delay_click": 1,
+    "max_delay_click": 3,
+    "workers": 5,
+    "countdown_loop": 1000
+}
