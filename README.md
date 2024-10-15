@@ -4,9 +4,75 @@ A Python-based automation scripts that uses no API Telegram for interacting with
 [![Join our Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/cucumber_scripts)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cucumber-pickle/Cucumber)
 
-# Its testing! 
+# REGISTRATIONS 
+1. Visit - [https://t.me/xkucoinbot/](https://t.me/xkucoinbot/kucoinminiapp?startapp=cm91dGU9JTJGdGFwLWdhbWUlM0ZpbnZpdGVyVXNlcklkJTNENzI2ODM3NjIxJTI2cmNvZGUlM0Q=)
+2. press continue until you log in to the app
 
-[https://t.me/xkucoinbot/](https://t.me/xkucoinbot/kucoinminiapp?startapp=cm91dGU9JTJGdGFwLWdhbWUlM0ZpbnZpdGVyVXNlcklkJTNENzI2ODM3NjIxJTI2cmNvZGUlM0Q=)
+## Installation
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/cucumber-pickle/xKucoinCum.git
+   cd xKucoinCum
+   ```
+
+2. **Create a virtual environment (optional but recommended)**
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+
+   
+3. **Install Dependencies:**
+
+The bot uses Python 3 and requires some external libraries. You can install them using:
+
+  ```bash
+    pip install -r requirements.txt
+  ```
+
+
+## Configuration Setup:
+
+Create a config.json file in the project root directory:
+
+   ```json
+
+{
+    "use_proxy": true,
+    "min_click": 50,
+    "max_click": 70,
+    "min_delay_click": 1,
+    "max_delay_click": 3,
+    "workers": 5,
+    "countdown_loop": 1000
+}
+   ```
+- `use_proxy`: Enable/disable use_proxy (true/false).
+- `min_click`: minimum click per request
+- `max_click`: maximum click per request
+- `min_delay_click`: minimum delay (in seconds) between clicks
+- `max_delay_click`: maximum  delay (in seconds) between clicks
+- `workers`: how many accounts will be running at the same time
+- `countdown_loop`: total duration (in seconds) for which the main loop will run before restarting or stopping
+
+## Query Setup:
+
+Add your Agent301 account tokens to a file named `data.txt` in the root directory. Each token should be on a new line.
+
+Example:
+   ```txt
+query_id=AA....
+user=%7B%22id%....
+   ```
+
+## Usage
+Run the script with:
+
+   ```bash
+python bot.py
+   ```
 
 ## How to get tgWebAppData (query_id / user_id)
 
