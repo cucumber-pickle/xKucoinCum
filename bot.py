@@ -295,10 +295,14 @@ async def main():
 
             if running:
                 log_line()
+                now = datetime.now().strftime("%Y-%m-%d %H:%M")
+
                 log(red + f'Total Balance: {wht}{sum(total_balance)}')
                 log(red + f'total_broken: {wht}{len(broken_accounts)} / {len(encoded_data_list)}{red} broken_accounts:{wht}{broken_accounts}')
                 log_line()
-                now = datetime.now().strftime("%Y-%m-%d %H:%M")
+                open("balance.txt", "a", encoding="utf-8").write(
+                    f"{now} / Total Balance: {sum(total_balance)} \n"
+                )
                 open("error.txt", "a", encoding="utf-8").write(
                     f"{now} / total_broken: {len(broken_accounts)} / {len(encoded_data_list)} broken_accounts:{broken_accounts} \n"
                 )
