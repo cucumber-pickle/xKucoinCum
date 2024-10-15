@@ -59,7 +59,7 @@ Create a config.json file in the project root directory:
 
 ## Query Setup:
 
-Add your Agent301 account tokens to a file named `data.txt` in the root directory. Each token should be on a new line.
+Add your xKuCoin account tokens to a file named `data.txt` in the root directory. Each token should be on a new line.
 
 Example:
    ```txt
