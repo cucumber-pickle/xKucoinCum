@@ -8,6 +8,27 @@ A Python-based automation scripts that uses no API Telegram for interacting with
 1. Visit - [https://t.me/xkucoinbot/](https://t.me/xkucoinbot/kucoinminiapp?startapp=cm91dGU9JTJGdGFwLWdhbWUlM0ZpbnZpdGVyVXNlcklkJTNENzI2ODM3NjIxJTI2cmNvZGUlM0Q=)
 2. press continue until you log in to the app
 
+
+## About Proxies
+
+
+You can add proxy lists in the `proxies.txt` file, and the proxy format is as follows:
+
+If there is authentication:
+
+Format:
+
+```
+http://user:password@hostname:port
+```
+
+Example:
+
+```
+http://admin:admin@69.69.69.69:6969
+```
+
+
 ## Installation
 1. **Clone the Repository:**
 
